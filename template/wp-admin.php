@@ -1,6 +1,6 @@
 <div class="wrap">
 		
-    <h1>Super Simple Site Offline</h1>
+    <h1>Page Redirect & Site Offline</h1>
 
     <?php
     $default_tab = null;
@@ -15,15 +15,15 @@
     
     <div class="tab-content" style="margin-top: 40px;">
     <?php switch($tab) :
-      case 'access': 
-        include_once('wp-admin-access.php');
-        break;
-      case 'design': 
-        include_once('wp-admin-design.php');
-        break;
       default: 
-        include_once('wp-admin-form.php');
-        break;
+      include_once('wp-admin-form.php');
+      break;
+      case 'design': 
+      include_once('wp-admin-design.php');
+      break;
+      case 'access': 
+      include_once('wp-admin-access.php');
+      break;      
     endswitch; ?>
     </div>
 			

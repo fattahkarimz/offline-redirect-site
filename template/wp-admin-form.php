@@ -16,7 +16,7 @@
                                      'selected'=>get_option('bcSOFF_site_offline')
                                    );
 
-                sso_forms::check($check_vars, 'Enable site offline. Admin Site still boleh view macam biasa'); ?>
+                sso_forms::check($check_vars, 'Enable site offline for client side'); ?>
                 <?php if(get_option('bcSOFF_site_offline')==1){ ?>
                 <p><strong><a href="<?php echo get_home_url(); ?>/?preview_offline=true" target="_blank"><?php _e('Preview','betaoffline'); ?></a></strong></p>
                 <?php } ?>
@@ -37,7 +37,7 @@
 									 'selected'=>get_option('bcSOFF_offline_redirect')
 								   );
 
-				sso_forms::check($check_vars, "Redirect to other website, and fill out form below untuk redirect ke page lain"); ?>
+				sso_forms::check($check_vars, "Redirect to other website, and fill out form below for direction"); ?>
                 </td>
             </tr> 
                
